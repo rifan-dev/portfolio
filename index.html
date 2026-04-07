@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journey | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/lucide@latest/css/lucide.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Portofolio</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#stage">Journey</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#vision">Vision</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i data-lucide="moon" class="moon-icon"></i>
+                    <i data-lucide="sun" class="sun-icon"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#stage" class="mobile-link">Journey</a></li>
+            <li><a href="#work" class="mobile-link">Work</a></li>
+            <li><a href="#vision" class="mobile-link">Vision</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero fade-in">
+            <div class="hero-content">
+                <span class="badge">Welcome</span>
+                <h1 class="hero-title">Hi, I'm Rifan Mohamed <span class="accent">Engineering Student.</span></h1>
+                <p class="hero-subtitle">I'm an engineering student who loves writing code, solving problems, and building clean, user-friendly Softwares</p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn btn-primary">See my work</a>
+                    <a href="#about" class="btn btn-secondary">My journey</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="photo-container">
+                    <img src="profile.jpg" alt="My Profile Photo" class="profile-photo">
+                    <div class="photo-backdrop"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section fade-in">
+            <h2 class="section-title">The Mindset.</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I don't just write code; I explore possibilities. My journey started with a simple question of "how does this work?" and has evolved into an ongoing pursuit of craftsmanship and elegance in software.</p>
+                    <p>What drives me isn't just shipping features. It's the moment when a complex problem distills into a simple, beautiful solution. I believe in continuous evolution—both in the tools I use and the way I think.</p>
+                </div>
+                <div class="about-quote">
+                    <blockquote>
+                        "The beautiful thing about learning is nobody can take it away from you."
+                        <cite>— B.B. King</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Stage Section -->
+        <section id="stage" class="stage section fade-in">
+            <h2 class="section-title">Where I am right now.</h2>
+            <p class="section-desc">Currently deep in the learning phase, bridging the gap between academic foundations and modern industry practices.</p>
+            
+            <div class="stage-container">
+                <div class="stage-card">
+                    <div class="icon-wrap"><i data-lucide="book-open"></i></div>
+                    <h3>Academic Core</h3>
+                    <p>Building a robust foundation in computer science principles, data structures, and algorithms.</p>
+                </div>
+                <div class="stage-card active">
+                    <div class="icon-wrap"><i data-lucide="code-2"></i></div>
+                    <h3>Modern Web</h3>
+                    <p>Obsessed with responsive design, modern JavaScript frameworks, and creating smooth user experiences.</p>
+                </div>
+                <div class="stage-card">
+                    <div class="icon-wrap"><i data-lucide="layers"></i></div>
+                    <h3>System Architecture</h3>
+                    <p>Learning how to structure large applications and write clean, maintainable backend code.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section fade-in">
+            <h2 class="section-title">Tools of connection.</h2>
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript (ES6+)</span>
+                        <span class="tag">Android Development</span>
+                        <span class="tag">Flutter</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Command Line</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Timeline Section -->
+        <section id="education" class="education section fade-in">
+            <h2 class="section-title">The Foundation.</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - Present</span>
+                        <h3>B.Tech Information Technology</h3>
+                        <h4>College of Engineering Vadakara</h4>
+                        <p>Focusing on software engineering and systems design. Key learnings map beyond course material into independent, curiosity-driven projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2025</span>
+                        <h3>Higher Secondary</h3>
+                        <h4>Computer Science</h4>
+                        <p>Developed analytical thinking and mathematical foundations. This phase taught me the discipline of rigorous problem solving.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects / Work Section -->
+        <section id="work" class="work section fade-in">
+            <h2 class="section-title">Selected Works.</h2>
+            <p class="section-desc">A few things I've built to solve real problems and explore new technologies.</p>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);">
+                        <i data-lucide="music" style="width: 48px; height: 48px; color: var(--accent);"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Minimalist Music player</h3>
+                        <p>A clutter-free music player that focuses on what needs people to listen music.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Local Storage</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);">
+                         <i data-lucide="cloud-lightning" style="width: 48px; height: 48px; color: var(--accent);"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Context App</h3>
+                        <p>Not just the temperature, but how it feels. Suggests clothing and activities based on real-time atmospheric data.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Weather API</span>
+                            <span>Geolocation</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Future Vision Section -->
+        <section id="vision" class="vision section fade-in">
+            <h2 class="section-title">The Horizon.</h2>
+            <div class="vision-content">
+                <p>I am building toward becoming a Full-stack Developer with a deep appreciation for UI/UX engineering. I want to build products that don't just function well, but feel invisible to the user—reducing friction and maximizing delight.</p>
+                <p>My ultimate goal is to contribute to tools that empower creators and democratize technology.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section fade-in">
+            <h2 class="section-title">Let's Connect.</h2>
+            <p class="contact-desc">I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+            <div class="contact-links">
+                <a href="mailto:rifan.dev06@gmail.com" class="contact-card">
+                    <i data-lucide="mail"></i>
+                    <span>Say Hello</span>
+                </a>
+                <a href="#" class="contact-card">
+                    <i data-lucide="github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/rifan-mohamed-295696351" class="contact-card">
+                    <i data-lucide="linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" class="contact-card">
+                    <i data-lucide="twitter"></i>
+                    <span>Twitter</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Evolve. Crafted with curiosity.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
