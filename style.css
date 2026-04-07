@@ -300,13 +300,15 @@ nav.scrolled {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-top: 6rem;
     position: relative;
+    gap: 2rem;
 }
 
 .hero-content {
     flex: 1;
-    max-width: 800px;
+    max-width: 600px;
     z-index: 2;
 }
 
@@ -345,13 +347,14 @@ nav.scrolled {
 }
 
 .hero-visual {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
     width: 400px;
     height: 400px;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 /* Photo container */
@@ -717,6 +720,42 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        padding-top: 8rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-subtitle {
+        text-align: center;
+    }
+
+    .hero-visual {
+        width: 320px;
+        height: 320px;
+        margin-bottom: 2rem;
+    }
+
+    .profile-photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .photo-backdrop {
+        width: 270px;
+        height: 270px;
+    }
+}
+
 @media (max-width: 900px) {
     .about-grid {
         grid-template-columns: 1fr;
@@ -734,6 +773,10 @@ footer {
         margin-left: 1rem;
     }
 
+    .hero {
+        padding-top: 6rem;
+    }
+
     .hero-title {
         font-size: 3rem;
     }
@@ -743,9 +786,20 @@ footer {
         width: 100%;
         max-width: 300px;
     }
-    
+
     .hero-visual {
-        display: none;
+        width: 280px;
+        height: 280px;
+    }
+
+    .profile-photo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .photo-backdrop {
+        width: 240px;
+        height: 240px;
     }
 
     .projects-grid {
